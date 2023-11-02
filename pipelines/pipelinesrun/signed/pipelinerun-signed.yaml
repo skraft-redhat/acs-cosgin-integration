@@ -13,7 +13,7 @@ spec:
     - name: git-revision
       value: master
     - name: IMAGE
-      value: 'quay.io/szemmour/pipelines-vote-api:signed'
+      value: 'quay.io/skraft/poi:signed'
     - name: namespace
       value: poi-demo
   pipelineRef:

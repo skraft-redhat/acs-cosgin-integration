@@ -2,7 +2,6 @@ apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   generateName: build-and-deploy-signed
-  namespace: demo
   labels:
     tekton.dev/pipeline: build-and-deploy-signed
 spec:

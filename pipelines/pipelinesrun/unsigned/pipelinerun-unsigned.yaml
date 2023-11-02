@@ -15,7 +15,7 @@ spec:
     - name: IMAGE
       value: 'quay.io/szemmour/pipelines-vote-api:unsigned'
     - name: namespace
-      value: demo
+      value: poi-demo
   pipelineRef:
     name: build-and-deploy-unsigned
   serviceAccountName: pipeline

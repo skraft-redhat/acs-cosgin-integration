@@ -15,7 +15,7 @@ spec:
         app: vote-api
     spec:
       containers:
-        - image: quay.io/szemmour/pipelines-vote-api:signed
+        - image: quay.io/skraft/poi:signed
           imagePullPolicy: Always
           name: vote-api
           ports:

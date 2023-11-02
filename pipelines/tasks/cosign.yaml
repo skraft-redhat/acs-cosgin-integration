@@ -17,13 +17,13 @@ spec:
     - description: The email from the certificate common name in JSON format
       name: email
   steps:
-    - image: 'gcr.io/projectsigstore/cosign:v1.13.0'
+    - image: 'gcr.io/projectsigstore/cosign:v2.0.0'
       name: cosign
       resources: {}
       script: >
         #!/busybox/env /busybox/sh
 
-        CMD="cosign sign --key k8s://$(params.namespace)/$(params.cosignkey) $(params.image)"
+        CMD="cosign sign --key k8s://$(params.namespace)/$(params.cosignkey) $(params.image) --y=true"
 
         echo "${CMD}"
 

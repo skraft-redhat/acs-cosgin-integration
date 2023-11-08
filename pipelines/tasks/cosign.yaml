@@ -23,7 +23,7 @@ spec:
       script: >
         #!/busybox/env /busybox/sh
 
-        CMD="cosign sign --key k8s://$(params.namespace)/$(params.cosignkey) $(params.image) -y=true"
+        CMD="cosign sign --key k8s://$(params.namespace)/$(params.cosignkey) $(params.image) --yes"
 
         echo "${CMD}"
 

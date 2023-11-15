@@ -6,9 +6,6 @@ spec:
   workspaces:
   - name: shared-workspace
   params:
-  - name: deployment-name
-    type: string
-    description: name of the deployment to be patched
   - name: git-url
     type: string
     description: url of the git repo for the code of deployment
@@ -79,13 +76,3 @@ spec:
       - sign-image
     taskRef:
       name: rhacs-image-check
-  finally:
-  - name: apply-manifest-signed
-    taskRef:
-      name: apply-manifest-signed
-    workspaces:
-    - name: source
-      workspace: shared-workspace
-    params:
-    - name: namespace
-      value: $(params.namespace)

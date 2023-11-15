@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- apply-signed.yaml
-- apply-unsigned.yaml
+- apply-manifest-signed.yaml
+- apply-manifest-unsigned.yaml
 - cosign.yaml
 - rhacs-image-check.yaml

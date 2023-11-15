@@ -10,6 +10,8 @@ spec:
       value: master
     - name: IMAGE
       value: 'quay.io/skraft/cosign-acs:base'
+    - name: namespace
+      value: 'demo'
   pipelineRef:
     name: build-and-deploy-unsecured
   serviceAccountName: pipeline

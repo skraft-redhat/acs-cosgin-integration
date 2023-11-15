@@ -53,7 +53,7 @@ spec:
   finally:
   - name: apply-manifest-unsigned
     taskRef:
-      name: apply-manifest
+      name: apply-manifest-unsigned
     workspaces:
     - name: source
       workspace: shared-workspace

@@ -5,4 +5,3 @@ resources:
 - pvc.yaml
 - cosign.yaml
 - rhacs-image-check.yaml
-- pipelinerun-unsigned.yaml

@@ -65,9 +65,9 @@ spec:
     taskRef:
       name: rhacs-image-check
   finally:
-  - name: apply-manifest-unsigned
+  - name: apply-manifest
     taskRef:
-      name: apply-manifest-unsigned
+      name: apply-manifest
     workspaces:
     - name: source
       workspace: shared-workspace

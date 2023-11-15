@@ -1,9 +1,9 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  generateName: build-and-deploy-unsigned
+  generateName: build-and-deploy-unsecured
   labels:
-    tekton.dev/pipeline: build-and-deploy-unsigned
+    tekton.dev/pipeline: build-and-deploy-unsecured
 spec:
   params:
     - name: git-revision

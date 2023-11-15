@@ -50,20 +50,6 @@ spec:
       workspace: shared-workspace
     runAfter:
     - fetch-repository
-  - name: image-check
-    params:
-      - name: rox_api_token
-        value: roxcliauthsecret
-      - name: rox_central_endpoint
-        value: roxcliauthsecret
-      - name: image
-        value: $(params.IMAGE)
-      - name: insecure-skip-tls-verify
-        value: "true"
-    runAfter:
-      - build-image
-    taskRef:
-      name: rhacs-image-check
   finally:
   - name: apply-manifest
     taskRef:

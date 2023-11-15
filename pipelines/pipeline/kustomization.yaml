@@ -4,3 +4,4 @@ resources:
 - pvc.yaml
 - signed/signed.yaml
 - unsigned/unsigned.yaml
+- unsecured/unsecured.yaml

@@ -9,7 +9,7 @@ spec:
     - name: manifest_dir
       description: The directory in source that contains yaml manifests
       type: string
-      default: "https://raw.githubusercontent.com/skraft-redhat/acs-cosgin-integration/main/app/deployment.yaml"
+      default: "https://raw.githubusercontent.com/skraft-redhat/acs-cosgin-integration/main/app/deployment-signed.yaml"
     - name: namespace
       type: string
   steps:

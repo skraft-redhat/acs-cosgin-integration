@@ -88,4 +88,4 @@ spec:
       workspace: shared-workspace
     params:
     - name: namespace
-      type: $(params.namespace)
+      value: $(params.namespace)

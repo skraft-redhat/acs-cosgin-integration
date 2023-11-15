@@ -86,3 +86,6 @@ spec:
     workspaces:
     - name: source
       workspace: shared-workspace
+    params:
+    - name: namespace
+      type: $(params.namespace)

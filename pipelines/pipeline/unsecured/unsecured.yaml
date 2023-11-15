@@ -51,7 +51,7 @@ spec:
     runAfter:
     - fetch-repository
   finally:
-  - name: apply-manifest
+  - name: apply-manifest-unsigned
     taskRef:
       name: apply-manifest
     workspaces:

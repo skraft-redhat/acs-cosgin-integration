@@ -6,6 +6,8 @@ metadata:
     tekton.dev/pipeline: build-and-deploy-unsecured
 spec:
   params:
+    - name: git-url
+      value: 'https://github.com/openshift/pipelines-vote-api.git'
     - name: git-revision
       value: master
     - name: IMAGE

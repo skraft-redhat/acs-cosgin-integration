@@ -20,5 +20,5 @@ spec:
       args:
         - |-
           echo Applying manifests in $(inputs.params.manifest_dir) directory
-          oc create -f $(inputs.params.manifest_dir) -n $(params.namespace)
+          oc apply -f $(inputs.params.manifest_dir) -n $(params.namespace)
           echo -----------------------------------
